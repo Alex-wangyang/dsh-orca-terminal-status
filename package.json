@@ -1,0 +1,63 @@
+{
+  "name": "dsh-orca-terminal-status",
+  "version": "0.1.0",
+  "description": "Bridge real DeepSeek Harness TUI lifecycle to Orca terminal readiness and completion.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Alex-wangyang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-wangyang/dsh-orca-terminal-status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alex-wangyang/dsh-orca-terminal-status/issues"
+  },
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "locale/*.json"
+  ],
+  "scripts": {
+    "test": "node --test status.test.mjs"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-agent": "0.2.0-rc.2",
+    "@deepseek-ai/cordis": "4.0.4",
+    "@deepseek-ai/cordis-plugin-loader": "1.0.5",
+    "@deepseek-harness-tui/dsh-tui": "0.13.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-agent": {
+      "optional": true
+    },
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/cordis-plugin-loader": {
+      "optional": true
+    },
+    "@deepseek-harness-tui/dsh-tui": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "orca",
+    "cordis",
+    "tui"
+  ]
+}

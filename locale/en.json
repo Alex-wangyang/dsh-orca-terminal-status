@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Orca terminal status",
+    "description": "Report real DSH TUI readiness and finalized idle on Orca’s PTY carrier."
+  }
+}

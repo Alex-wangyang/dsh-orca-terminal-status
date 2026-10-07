@@ -1,0 +1,4 @@
+- insert:
+    - id: local-orca-terminal-status
+      name: 'dsh-orca-terminal-status'
+      config: {}

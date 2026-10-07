@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Orca 终端状态",
+    "description": "通过 Orca 的 PTY 通路报告 DSH TUI 的实际就绪状态和完成状态。"
+  }
+}
